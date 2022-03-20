@@ -5,6 +5,7 @@ public class Git {
         System.out.println("Hello ");
         System.out.println("hot-fix");
         System.out.println("PUSH");
+        System.out.println("PULL");
     }
 }
 
