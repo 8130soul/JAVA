@@ -7,6 +7,7 @@ public class Git {
         System.out.println("PUSH");
         System.out.println("PULL");
         System.out.println("Gitee");
+        System.out.println("Gitee test");
     }
 }
 
