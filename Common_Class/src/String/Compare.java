@@ -10,7 +10,7 @@ import java.util.Arrays;
  *         如何实现？使用两个接口中的任何一个：Comparable 或 Comparator
  *
  * 二、Comparable接口与Comparator的使用的对比：
- *        Comparable接口的方式一旦一定，保证Comparable接口实现类的对象在任何位置都可以比较大小。
+ *        Comparable接口的方式一旦确定，保证Comparable接口实现类的对象在任何位置都可以比较大小。
  *        Comparator接口属于临时性的比较。
  */
 public class Compare {
