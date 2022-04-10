@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Annotation/Annotation.iml" filepath="$PROJECT_DIR$/Annotation/Annotation.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Collection/Collection.iml" filepath="$PROJECT_DIR$/Collection/Collection.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Common_Class/Common_Class.iml" filepath="$PROJECT_DIR$/Common_Class/Common_Class.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Enume_Class/Enume_Class.iml" filepath="$PROJECT_DIR$/Enume_Class/Enume_Class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java_SE/src/Annotation/Annotation.iml" filepath="$PROJECT_DIR$/Java_SE/src/Annotation/Annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java_SE/src/Collection/Collection.iml" filepath="$PROJECT_DIR$/Java_SE/src/Collection/Collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java_SE/src/Common_Class/Common_Class.iml" filepath="$PROJECT_DIR$/Java_SE/src/Common_Class/Common_Class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java_SE/src/Enume_Class/Enume_Class.iml" filepath="$PROJECT_DIR$/Java_SE/src/Enume_Class/Enume_Class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java_SE/src/Generic/Generic.iml" filepath="$PROJECT_DIR$/Java_SE/src/Generic/Generic.iml" />
       <module fileurl="file://$PROJECT_DIR$/GitTest/GitTest.iml" filepath="$PROJECT_DIR$/GitTest/GitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java_SE/src/IO_Stream/IO_Stream.iml" filepath="$PROJECT_DIR$/Java_SE/src/IO_Stream/IO_Stream.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JAVA.iml" filepath="$PROJECT_DIR$/.idea/JAVA.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Multiple_Thread/Multiple_Thread.iml" filepath="$PROJECT_DIR$/Multiple_Thread/Multiple_Thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java_SE/Java_SE.iml" filepath="$PROJECT_DIR$/Java_SE/Java_SE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java_SE/src/Multiple_Thread/Multiple_Thread.iml" filepath="$PROJECT_DIR$/Java_SE/src/Multiple_Thread/Multiple_Thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java_SE/src/Network/Network.iml" filepath="$PROJECT_DIR$/Java_SE/src/Network/Network.iml" />
       <module fileurl="file://$PROJECT_DIR$/Work/Work.iml" filepath="$PROJECT_DIR$/Work/Work.iml" />
     </modules>
   </component>
