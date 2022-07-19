@@ -1,5 +1,5 @@
 import org.junit.Test;
-import pojo.Pojo;
+import IOC.xml.pojo.Pojo;
 
 import java.util.ArrayList;
 import java.util.Collection;

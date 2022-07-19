@@ -4,9 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+import jdbc_1.prepareStatement.util.JDBCUtils;
 import org.junit.Test;
-
-import com.atguigu3.util.JDBCUtils;
 
 /*
  * 使用PreparedStatement实现批量数据的操作

@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.Date;
 import java.util.List;
 
-import com.atguigu2.bean.Customer;
+import jdbc_2.com.atguigu2.bean.Customer;
 
 /*
  * 此接口用于规范针对于customers表的常用操作
@@ -18,7 +18,7 @@ public interface CustomerDAO {
 	 * @param conn
 	 * @param cust
 	 */
-	void insert(Connection conn,Customer cust);
+	void insert(Connection conn, Customer cust);
 	/**
 	 * 
 	 * @Description 针对指定的id，删除表中的一条记录

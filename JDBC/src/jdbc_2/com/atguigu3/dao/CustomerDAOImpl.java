@@ -1,12 +1,13 @@
 package jdbc_2.com.atguigu3.dao;
 
+import jdbc_2.com.atguigu2.bean.Customer;
+
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.sql.Connection;
 import java.sql.Date;
 import java.util.List;
 
-import com.atguigu2.bean.Customer;
 
 public class CustomerDAOImpl extends BaseDAO<Customer> implements CustomerDAO{
 	

@@ -8,11 +8,12 @@ import java.sql.ResultSetMetaData;
 import java.util.ArrayList;
 import java.util.List;
 
+import jdbc_1.prepareStatement.bean.Order;
+import jdbc_1.prepareStatement.util.JDBCUtils;
 import org.junit.Test;
 
-import com.atguigu3.bean.Customer;
-import com.atguigu3.bean.Order;
-import com.atguigu3.util.JDBCUtils;
+import jdbc_1.prepareStatement.bean.Customer;
+
 
 /**
  * 
@@ -27,8 +28,8 @@ public class PreparedStatementQueryTest {
 	@Test
 	public void testGetForList(){
 		
-		String sql = "select id,name,email from customers where id < ?";
-		List<Customer> list = getForList(Customer.class,sql,12);
+		String sql = "select id,name,email from customers where id = ?";
+		List<Customer> list = getForList(Customer.class,sql,1);
 		list.forEach(System.out::println);
 		
 		String sql1 = "select order_id orderId,order_name orderName from `order`";

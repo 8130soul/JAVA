@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--  自动装配
+     autowire属性：
+        byName：根据名称自动注入
+        byType：根据类型自动注入-->
+    <bean id="emp" class="IOC.xml.autowire.Emp" autowire="byName"></bean>
+    <bean id="dept" class="IOC.xml.autowire.Dept"></bean>
+</beans>

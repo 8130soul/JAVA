@@ -8,10 +8,10 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 
+import jdbc_1.prepareStatement.bean.Customer;
+import jdbc_1.prepareStatement.util.JDBCUtils;
 import org.junit.Test;
 
-import com.atguigu3.bean.Customer;
-import com.atguigu3.util.JDBCUtils;
 
 /**
  * 
@@ -81,12 +81,8 @@ public class CustomerForQuery {
 			e.printStackTrace();
 		}finally{
 			JDBCUtils.closeResource(conn, ps, rs);
-			
 		}
-		
 		return null;
-		
-		
 	}
 	
 	

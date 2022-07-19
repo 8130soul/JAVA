@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+    <!-- 利用util标签完成list集合注入提取-->
+    <util:list id="list">
+        <value>降龙十八掌</value>
+        <value>乾坤大挪移</value>
+    </util:list>
+
+    <bean id="bookList" class="IOC.xml.pojo.Book" scope="prototype">
+        <property name="list" ref="list"></property>
+    </bean>
+</beans>

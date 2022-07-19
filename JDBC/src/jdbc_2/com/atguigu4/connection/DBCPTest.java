@@ -28,7 +28,7 @@ public class DBCPTest {
 		
 		//设置基本信息
 		source.setDriverClassName("com.mysql.jdbc.Driver");
-		source.setUrl("jdbc:mysql:///test");
+		source.setUrl("jdbc:mysql:///IOC.xml.test");
 		source.setUsername("root");
 		source.setPassword("abc123");
 		

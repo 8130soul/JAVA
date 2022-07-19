@@ -1,5 +1,5 @@
 import org.junit.Test;
-import pojo.Pojo;
+import IOC.xml.pojo.Pojo;
 
 import java.util.*;
 
@@ -53,14 +53,14 @@ public class Collection_Methods {
         System.out.println(collection.contains(new String("Tome")));
 
         //重写equals方法前
-        /*System.out.println(collection.contains(new pojo.Pojo("Jack",55)));//false */
+        /*System.out.println(collection.contains(new IOC.xml.pojo.Pojo("Jack",55)));//false */
 
         //重写equals方法后   具体还是看equals方法的实现  比较的是地址值还是具体内容
         System.out.println(collection.contains(new Pojo("Jack",55)));//false -->true
 
-        /*pojo.Pojo pojo = new pojo.Pojo("Jack", 20);
-        pojo.Pojo pojo2 = new pojo.Pojo("Jack", 20);
-        System.out.println(System.identityHashCode(pojo)); //1645995473
+        /*IOC.xml.pojo.Pojo IOC.xml.pojo = new IOC.xml.pojo.Pojo("Jack", 20);
+        IOC.xml.pojo.Pojo pojo2 = new IOC.xml.pojo.Pojo("Jack", 20);
+        System.out.println(System.identityHashCode(IOC.xml.pojo)); //1645995473
         System.out.println(System.identityHashCode(pojo2));*/  //1463801669
 
         //7.containsAll(Collection coll1):判断形参coll1中的所有元素是否都存在于当前集合中。

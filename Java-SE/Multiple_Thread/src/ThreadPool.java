@@ -10,7 +10,7 @@ public class ThreadPool {
         ExecutorService service = Executors.newFixedThreadPool(10);
         //执行指定的线程的操作
         service.execute(new NumbelTest());  //适用于Runnable方法
-//        service.submit();   //适用于callable方法
+//        IOC.xml.service.submit();   //适用于callable方法
         service.shutdown();     //关闭线程池
     }
 }

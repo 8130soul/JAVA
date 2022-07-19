@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--  级联赋值  -->
+    <bean id="employee" class="IOC.xml.pojo.Employee">
+        <property name="eName" value="张三"></property>
+        <property name="gender" value="男"></property>
+        <property name="dept" ref="dept"/>
+        <property name="dept.dName" value="城中村"></property>
+    </bean>
+    <bean id="dept" class="IOC.xml.pojo.Dept">
+        <property name="dName" value="人事处"></property>
+    </bean>
+</beans>

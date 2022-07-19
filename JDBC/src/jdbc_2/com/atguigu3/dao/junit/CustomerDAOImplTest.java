@@ -6,11 +6,12 @@ import java.sql.Connection;
 import java.sql.Date;
 import java.util.List;
 
+import jdbc_2.com.atguigu2.bean.Customer;
+import jdbc_2.com.atguigu3.dao.CustomerDAOImpl;
+import jdbc_2.com.atguigu4.util.JDBCUtils;
 import org.junit.Test;
 
-import com.atguigu4.util.JDBCUtils;
-import com.atguigu2.bean.Customer;
-import com.atguigu3.dao.CustomerDAOImpl;
+
 
 public class CustomerDAOImplTest {
 
@@ -58,8 +59,7 @@ public class CustomerDAOImplTest {
 			conn = JDBCUtils.getConnection();
 			Customer cust = new Customer(18,"贝多芬","beiduofen@126.com",new Date(453465656L));
 			dao.update(conn, cust);
-			
-			
+
 			System.out.println("修改成功");
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -91,7 +91,7 @@ public class CustomerDAOImplTest {
 	public void testGetAll() {
 		Connection conn = null;
 		try {
-			conn = JDBCUtils.getConnection();
+			conn = JDBCUtils.getConnection3();
 			
 			List<Customer> list = dao.getAll(conn);
 			list.forEach(System.out::println);

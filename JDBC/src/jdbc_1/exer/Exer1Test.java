@@ -4,9 +4,9 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.util.Scanner;
 
+import jdbc_1.prepareStatement.util.JDBCUtils;
 import org.junit.Test;
 
-import com.atguigu3.util.JDBCUtils;
 //课后练习1
 public class Exer1Test {
 	

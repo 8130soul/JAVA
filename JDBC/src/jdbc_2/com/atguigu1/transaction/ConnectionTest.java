@@ -2,9 +2,9 @@ package jdbc_2.com.atguigu1.transaction;
 
 import java.sql.Connection;
 
+import jdbc_2.com.atguigu1.util.JDBCUtils;
 import org.junit.Test;
 
-import com.atguigu1.util.JDBCUtils;
 
 public class ConnectionTest {
 	

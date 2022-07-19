@@ -1,5 +1,7 @@
 package jdbc_2.com.atguigu2.dao;
 
+import jdbc_2.com.atguigu1.util.JDBCUtils;
+
 import java.lang.reflect.Field;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,7 +11,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.atguigu1.util.JDBCUtils;
 
 /*
  * DAO: data(base) access object
@@ -33,7 +34,6 @@ public abstract class BaseDAO {
 		} finally {
 			// 4.资源的关闭
 			JDBCUtils.closeResource(null, ps);
-
 		}
 		return 0;
 
@@ -58,6 +58,9 @@ public abstract class BaseDAO {
 
 			if (rs.next()) {
 				T t = clazz.newInstance();
+				/*System.out.println("------------------");
+				System.out.println(t.getClass().getName());
+				System.out.println(t);*/
 				// 处理结果集一行数据中的每一个列
 				for (int i = 0; i < columnCount; i++) {
 					// 获取列值

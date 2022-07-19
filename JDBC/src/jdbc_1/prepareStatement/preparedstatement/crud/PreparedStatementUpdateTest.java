@@ -12,10 +12,10 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Properties;
 
+import jdbc_1.prepareStatement.util.JDBCUtils;
 import org.junit.Test;
 
-import com.atguigu1.connection.ConnectionTest;
-import com.atguigu3.util.JDBCUtils;
+
 
 /*
  * 使用PreparedStatement来替换Statement,实现对数据表的增删改操作
@@ -32,12 +32,12 @@ public class PreparedStatementUpdateTest {
 //		update(sql,3);
 		
 		String sql = "update `order` set order_name = ? where order_id = ?";
-		update(sql,"DD","2");
+		update(sql,"BB","2");
 		
 	}
 	
 	//通用的增删改操作
-	public void update(String sql,Object ...args){//sql中占位符的个数与可变形参的长度相同！
+	public int update(String sql,Object ...args){//sql中占位符的个数与可变形参的长度相同！
 		Connection conn = null;
 		PreparedStatement ps = null;
 		try {
@@ -50,7 +50,7 @@ public class PreparedStatementUpdateTest {
 				ps.setObject(i + 1, args[i]);//小心参数声明错误！！
 			}
 			//4.执行
-			ps.execute();
+			return ps.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally{
@@ -59,7 +59,7 @@ public class PreparedStatementUpdateTest {
 			
 		}
 		
-		
+		return 0;
 	}
 	
 	//修改customers表的一条记录

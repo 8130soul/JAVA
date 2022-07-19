@@ -4,10 +4,9 @@ import java.beans.PropertyVetoException;
 import java.sql.Connection;
 import java.sql.SQLException;
 
+import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.junit.Test;
 
-import com.mchange.v2.c3p0.ComboPooledDataSource;
-import com.mchange.v2.c3p0.DataSources;
 
 public class C3P0Test {
 	//方式一：
@@ -16,7 +15,7 @@ public class C3P0Test {
 		//获取c3p0数据库连接池
 		ComboPooledDataSource cpds = new ComboPooledDataSource();
 		cpds.setDriverClass( "com.mysql.jdbc.Driver" ); 
-		cpds.setJdbcUrl( "jdbc:mysql://localhost:3306/test" );
+		cpds.setJdbcUrl( "jdbc:mysql://localhost:3306/IOC.xml.test" );
 		cpds.setUser("root");                                  
 		cpds.setPassword("abc123"); 
 		//通过设置相关的参数，对数据库连接池进行管理：

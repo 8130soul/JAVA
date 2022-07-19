@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--  集合类型属性注入  -->
+    <bean id="student" class="IOC.xml.pojo.Student">
+        <!--数组属性-->
+        <property name="courses">
+            <array>
+                <value>Ajax课程</value>
+                <value>Java课程</value>
+            </array>
+        </property>
+
+        <!--list集合属性-->
+        <property name="list">
+            <list>
+                <value>听音乐</value>
+                <value>看小说</value>
+            </list>
+        </property>
+
+        <!--map集合属性-->
+        <property name="map">
+            <map>
+                <entry key="张三" value="打游戏"></entry>
+                <entry key="李四" value="看电视"></entry>
+            </map>
+        </property>
+
+        <!--set集合属性-->
+        <property name="set">
+            <set>
+                <value>SSM</value>
+                <value>Springboot2</value>
+            </set>
+        </property>
+
+        <!--  对象类型注入  -->
+        <property name="courseList">
+            <list>
+                <ref bean="course1"></ref>
+                <ref bean="course2"></ref>
+            </list>
+        </property>
+    </bean>
+
+    <!--  创建多个course对象  -->
+    <bean id="course1" class="IOC.xml.pojo.Course">
+        <property name="cName" value="Hello world"></property>
+    </bean>
+    <bean id="course2" class="IOC.xml.pojo.Course">
+        <property name="cName" value="Hello Java"></property>
+    </bean>
+</beans>

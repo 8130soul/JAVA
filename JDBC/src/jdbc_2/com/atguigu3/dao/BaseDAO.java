@@ -79,6 +79,7 @@ public abstract class BaseDAO<T> {
 
 			if (rs.next()) {
 				T t = clazz.newInstance();
+				System.out.println(t.toString());
 				// 处理结果集一行数据中的每一个列
 				for (int i = 0; i < columnCount; i++) {
 					// 获取列值
@@ -161,7 +162,6 @@ public abstract class BaseDAO<T> {
 				ps.setObject(i + 1, args[i]);
 				
 			}
-			
 			rs = ps.executeQuery();
 			if(rs.next()){
 				return (E) rs.getObject(1);

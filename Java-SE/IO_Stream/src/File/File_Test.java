@@ -103,7 +103,7 @@ public class File_Test {
      *  比如：file1.renameTo(file2)为例：
      *  要想保证返回true,需要file1在硬盘中是存在的，且file2不能在硬盘中存在
      *
-     *  不建议使用     建议使用apache的FileUtils工具 FileUtils.moveFile(file,new File("/run/test.txt"));
+     *  不建议使用     建议使用apache的FileUtils工具 FileUtils.moveFile(file,new File("/run/IOC.xml.test.txt"));
      */
     @Test
     public void test4(){
@@ -112,11 +112,11 @@ public class File_Test {
 
         /*String filePath="hello.txt";
         File file = new File(filePath);
-        boolean b = file.renameTo(new File("/run/test.txt"));
+        boolean b = file.renameTo(new File("/run/IOC.xml.test.txt"));
         System.out.println(b);
         //使用apache的FileUtils工具
         try {
-            FileUtils.moveFile(file,new File("/run/test.txt"));
+            FileUtils.moveFile(file,new File("/run/IOC.xml.test.txt"));
             System.out.println("success");
         } catch (IOException e) {
             e.printStackTrace();

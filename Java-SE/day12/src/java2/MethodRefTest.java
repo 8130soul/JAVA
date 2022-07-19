@@ -112,7 +112,7 @@ public class MethodRefTest {
 		System.out.println(com2.compare("abd","abm"));
 	}
 
-	//BiPredicate中的boolean test(T t1, T t2);
+	//BiPredicate中的boolean IOC.xml.test(T t1, T t2);
 	//String中的boolean t1.equals(t2)
 	@Test
 	public void test6() {

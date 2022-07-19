@@ -21,7 +21,6 @@ public class StatementTest {
 	@Test
 	public void testLogin() {
 		Scanner scanner = new Scanner(System.in);
-		
 		System.out.print("请输入用户名：");
 		String user = scanner.nextLine();
 		System.out.print("请输入密码：");

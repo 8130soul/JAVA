@@ -1,5 +1,10 @@
 package jdbc_2.com.atguigu4.util;
 
+import com.alibaba.druid.pool.DruidDataSourceFactory;
+import com.mchange.v2.c3p0.ComboPooledDataSource;
+import org.apache.commons.dbcp.BasicDataSourceFactory;
+import org.apache.commons.dbutils.DbUtils;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -13,12 +18,6 @@ import java.sql.Statement;
 import java.util.Properties;
 
 import javax.sql.DataSource;
-
-import org.apache.commons.dbcp.BasicDataSourceFactory;
-import org.apache.commons.dbutils.DbUtils;
-
-import com.alibaba.druid.pool.DruidDataSourceFactory;
-import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 public class JDBCUtils {
 	/**
@@ -58,7 +57,7 @@ public class JDBCUtils {
 	 * @throws SQLException
 	 */
 	//数据库连接池只需提供一个即可。
-	private static ComboPooledDataSource cpds = new ComboPooledDataSource("hellc3p0");
+	private static ComboPooledDataSource cpds = new ComboPooledDataSource("helloc3p0");
 	public static Connection getConnection1() throws SQLException{
 		Connection conn = cpds.getConnection();
 		
@@ -78,7 +77,7 @@ public class JDBCUtils {
 	static{
 		try {
 			Properties pros = new Properties();
-			FileInputStream is = new FileInputStream(new File("src/dbcp.properties"));
+			FileInputStream is = new FileInputStream(new File("src\\jdbc_2\\dbcp.properties"));
 			pros.load(is);
 			source = BasicDataSourceFactory.createDataSource(pros);
 		} catch (Exception e) {
